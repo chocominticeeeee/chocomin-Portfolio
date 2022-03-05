@@ -1,0 +1,145 @@
+.serviceSec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  min-height: 600px;
+  background-color: rgb(0, 255, 13);
+  background-position: center center;
+
+  & .sec__inner {
+    & h2 {
+      padding-left: 50px;
+    }
+    & .content {
+      transform-origin: bottom;
+      transform: scaleY(0);
+      opacity: 0;
+      transition: all 0.5s;
+      transition-delay: 0.5s;
+
+      width: 100%;
+      margin-top: 100px;
+      color: white;
+      & .skills {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        & .skill {
+          width: 100%;
+          display: flex;
+          flex-flow: column;
+          align-items: center;
+
+          & p {
+            width: 100%;
+            text-align: center;
+            margin-top: 15px;
+            font-size: 2rem;
+          }
+          & i {
+            font-size: 5rem;
+          }
+        }
+      }
+      & .content__text {
+        margin-top: 50px;
+        text-align: center;
+        & p{
+            margin-bottom: 5px;
+        }
+      }
+    }
+  }
+}
+
+.inview-serviceSec {
+  & h2 {
+    margin-top: 0px;
+    transform: scale(0.5) !important;
+    letter-spacing: 2rem;
+  }
+  & .content {
+    opacity: 1 !important;
+    transform: scaleY(1) !important;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .serviceSec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    min-height: 600px;
+    background-color: rgb(0, 255, 13);
+    background-position: center center;
+  
+    & .sec__inner {
+      & h2 {
+        padding-left: 50px;
+      }
+      & .content {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+
+        transform-origin: bottom;
+        transform: scaleY(0);
+        opacity: 0;
+        transition: all 0.5s;
+        transition-delay: 0.5s;
+  
+        width: 100%;
+        margin-top: 100px;
+        color: white;
+        & .skills {
+          height: 350px;
+          width: 400px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-flow: row;
+          flex-wrap: wrap;
+          & .skill {
+            width: 200px;
+            height: 100px;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+  
+            & p {
+              width: 100%;
+              text-align: center;
+              margin-top: 5px;
+              font-size: 1rem;
+            }
+            & i {
+              font-size: 4rem;
+            }
+          }
+        }
+        & .content__text {
+          margin-top: 50px;
+          text-align: center;
+          & p{
+              margin-bottom: 5px;
+          }
+        }
+      }
+    }
+  }
+  
+  .inview-serviceSec {
+    & h2 {
+      margin-top: 0px;
+      transform: scale(0.5) !important;
+      letter-spacing: 2rem;
+    }
+    & .content {
+      opacity: 1 !important;
+      transform: scaleY(1) !important;
+    }
+  }
+}

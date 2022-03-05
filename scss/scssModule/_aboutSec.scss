@@ -1,0 +1,142 @@
+.aboutSec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  min-height: 600px;
+  background-color: blue;
+  background-position: center center;
+  & p {
+    margin-bottom: 5px;
+  }
+  & .sec__inner {
+    & .content {
+      transform-origin: bottom;
+      transform: scaleY(0);
+      opacity: 0;
+
+      margin-top: 50px;
+      transition: all 0.5s;
+      transition-delay: 0.5s;
+      color: white;
+      & .keireki {
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+      & .profile {
+        display: flex;
+        & .thumnail {
+          width: 160px;
+          margin-right: 50px;
+          & img {
+            width: 100%;
+          }
+        }
+        & .profile__texts {
+          width: 80%;
+          & i{
+            margin-right: 5px;
+          }
+          & .text {
+            display: flex;
+            margin-bottom: 10px;
+            & .text_L {
+              width: 120px;
+            }
+            & .text_R {
+              width: 546px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.inview-aboutSec {
+  & h2 {
+    margin-top: 0px;
+    transform: scale(0.5) !important;
+    letter-spacing: 2rem;
+  }
+  & .content {
+    opacity: 1 !important;
+    transform: scaleY(1) !important;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .aboutSec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    min-height: 600px;
+    background-color: blue;
+    background-position: center center;
+    & p {
+      margin-bottom: 5px;
+    }
+    & .sec__inner {
+      margin: 0px 50px;
+      & .content {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        transform-origin: bottom;
+        transform: scaleY(0);
+        opacity: 0;
+
+        margin-top: 50px;
+        transition: all 0.5s;
+        transition-delay: 0.5s;
+        color: white;
+        & .keireki {
+          margin-top: 50px;
+          margin-bottom: 50px;
+        }
+        & .profile {
+          display: flex;
+          flex-flow: column-reverse;
+          width: 400px;
+          & .thumnail {
+            width: 160px;
+            margin-right: 50px;
+            & img {
+              width: 100%;
+            }
+          }
+          & .profile__texts {
+            width: 80%;
+            & i{
+              margin-right: 5px;
+            }
+            & .text {
+              display: flex;
+              margin-bottom: 10px;
+              & .text_L {
+                width: 120px;
+              }
+              & .text_R {
+                width: 546px !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  .inview-aboutSec {
+    & h2 {
+      margin-top: 0px;
+      transform: scale(0.5) !important;
+      letter-spacing: 2rem;
+    }
+    & .content {
+      opacity: 1 !important;
+      transform: scaleY(1) !important;
+    }
+  }
+}

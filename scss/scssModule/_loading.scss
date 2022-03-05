@@ -1,0 +1,51 @@
+.loading {
+  position: fixed;
+  z-index: 999999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  animation: loadingBg 3s;
+  animation-fill-mode: forwards;
+  opacity: 1;
+  & span {
+    position: inherit;
+    top: 50%;
+    left: 0;
+    display: block;
+    width: 0px;
+    height: 2px;
+    background-color: black;
+    animation: progressBar 2s;
+    animation-fill-mode: forwards;
+  }
+}
+@keyframes loadingBg {
+  80% {
+    opacity: 1;
+  }
+  100% {
+    z-index: -1000;
+    opacity: 0;
+  }
+}
+@keyframes progressBar {
+  40% {
+    width: 0px;
+    height: 2px;
+  }
+  80% {
+    left: 0;
+    width: 100vw;
+    height: 2px;
+  }
+  90% {
+    width: 100vw;
+    opacity: 1;
+  }
+  100% {
+    width: 100vw;
+    opacity: 0;    
+  }
+}

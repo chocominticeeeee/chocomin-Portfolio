@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STARSEED.</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="img/favicon.ico" />
+    <script src="https://unpkg.com/akar-icons-fonts"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <button onclick="autoscrollTop()" id="moveTopBtn">↑</button>
+    <div class="loading">
+      <span></span>
+    </div>
+    <!-- ヘッダー -->
+    <header>
+      <div class="header__inner">
+        <h1><a href="#top">STARSEED.</a></h1>
+        <nav>
+          <ul>
+            <li><a href="#net">ABOUT</a></li>
+            <li><a href="#wave">SERVICE</a></li>
+            <li><a href="#clouds">WORKS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <!-- mvセクション -->
+      <section class="mvSec" id="top">
+        <div class="mvSecBg rellax" data-rellax-speed="5"></div>
+        <div class="sec__inner">
+          <div class="mvSec__title">
+            <p class="p1">
+              <span>STARSEED.</span>
+            </p>
+            <p class="p2">
+              <span>CREATE</span>
+              <span>NEXT</span>
+              <span>GENERATION</span>
+            </p>
+            <!-- <p class="p3">
+              <i class="ai-twitter-fill"></i>
+              TWITTER
+            </p> -->
+          </div>
+        </div>
+        <div class="scrolltext">
+          <span>SCROLL</span>
+          <span></span>
+        </div>
+      </section>
+      <!-- アバウトセクション -->
+      <section class="aboutSec" id="net">
+        <div class="sec__inner">
+          <h2>ABOUT</h2>
+          <div class="content">
+            <div class="keireki">
+              <p>北海道生まれ北海道育ちのフリーランスエンジニア。</p>
+              <p>2022年1月　　Web制作の勉強を開始</p>
+              <p>2022年5月　　プロゲーマになれなかったマン</p>
+              <p>2023年1月　　フリーランスへ転向。</p>
+            </div>
+            <div class="profile">
+              <div class="thumnail">
+                <img src="img/icon.jpg" alt="" />
+              </div>
+              <div class="profile__texts">
+                <div class="text">
+                  <div class="text_L">名称</div>
+                  <div class="text_R">: STARSEED.（スターシード）</div>
+                </div>
+                <div class="text">
+                  <div class="text_L">所在地</div>
+                  <div class="text_R">: 北海道札幌市西区</div>
+                </div>
+                <div class="text">
+                  <div class="text_L">事業内容</div>
+                  <div class="text_R">
+                    :
+                    Web制作におけるディレクション、デザイン、HTML・CSSコーディング、<br />
+                    スマートフォンサイト、CMS導入等
+                  </div>
+                </div>
+                <div class="text">
+                  <div class="text_L">お問い合わせ</div>
+                  <div class="text_R">: chocomintice@gmail.com</div>
+                </div>
+                <div class="text">
+                  <div class="text_L">
+                    <i
+                      class="ai-twitter-fill"
+                      style="color: rgb(0, 132, 255)"
+                    ></i
+                    >Twitter
+                  </div>
+                  <div class="text_R">
+                    <a href="https://twitter.com/CS_EyKum" target="_blank"
+                      >: @CS_Eykum</a
+                    >
+                  </div>
+                </div>
+                <div class="text">
+                  <div class="text_L">
+                    <i class="ai-youtube-fill" style="color: red"></i>Youtube
+                  </div>
+                  <div class="text_R">
+                    <a
+                      href="https://www.youtube.com/channel/UCD1zdI0B1pfmzQff_RQrhUw"
+                      target="_blank"
+                    >
+                      :ちょこみんチャンネル</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- サービスセクション -->
+      <section class="serviceSec" id="wave">
+        <div class="sec__inner">
+          <h2>SERVICE</h2>
+          <div class="content">
+            <div class="skills">
+              <div class="skill">
+                <i class="ai-html-fill"></i>
+                <p>HTML</p>
+              </div>
+              <div class="skill">
+                <i class="ai-css-fill"></i>
+                <p>CSS</p>
+              </div>
+              <div class="skill">
+                <i class="ai-javascript-fill"></i>
+                <p>JavaScript</p>
+              </div>
+              <div class="skill">
+                <i class="ai-react-fill"></i>
+                <p>React.js</p>
+              </div>
+            </div>
+            <div class="content__text">
+              <p>デザインからHTML、CSS、JavaScrpt コーディングまで。</p>
+              <p>ウェブサイト制作全般に対応いたします。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ワークスセクション -->
+      <section class="worksSec" id="clouds">
+        <div class="sec__inner">
+          <h2>WORKS</h2>
+          <!-- スライダーのコンテナ -->
+          <div class="content">
+            <div class="swiper">
+              <!-- 必要に応じたwrapper -->
+              <div class="swiper-wrapper">
+                <!-- スライド -->
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <!-- コンタクトセクション -->
+      <section class="contactSec" id="contact">
+        <div class="sec__inner">
+          <h2>CONTACT</h2>
+          <div class="content">
+            <div class="Form">
+              <div class="Form-Item">
+                <p class="Form-Item-Label">
+                  <span class="Form-Item-Label-Required">必須</span>お名前
+                </p>
+                <input
+                  type="text"
+                  class="Form-Item-Input"
+                  placeholder="例）小林啓輔"
+                />
+              </div>
+              <div class="Form-Item">
+                <p class="Form-Item-Label">
+                  <span class="Form-Item-Label-Required">必須</span>電話番号
+                </p>
+                <input
+                  type="text"
+                  class="Form-Item-Input"
+                  placeholder="例）000-0000-0000"
+                />
+              </div>
+              <div class="Form-Item">
+                <p class="Form-Item-Label">
+                  <span class="Form-Item-Label-Required">必須</span
+                  >メールアドレス
+                </p>
+                <input
+                  type="email"
+                  class="Form-Item-Input"
+                  placeholder="例）example@gmail.com"
+                />
+              </div>
+              <div class="Form-Item">
+                <p class="Form-Item-Label isMsg">
+                  <span class="Form-Item-Label-Required">必須</span
+                  >お問い合わせ内容
+                </p>
+                <textarea class="Form-Item-Textarea"></textarea>
+              </div>
+              <input type="submit" class="Form-Btn" value="送信する" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer__inner">©Create by Chocomin</div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/library/rellax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.clouds.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
